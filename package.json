@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "my-nextron-app",
+  "description": "My application description",
+  "version": "1.0.0",
+  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "build:all": "nextron build --all",
+    "build:win32": "nextron build --win --ia32",
+    "build:win64": "nextron build --win --x64",
+    "build:mac": "nextron build --mac --x64",
+    "build:linux": "nextron build --linux",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-serve": "^1.1.0",
+    "electron-store": "^7.0.2",
+    "eslint": "^7.29.0",
+    "libsodium": "^0.7.9",
+    "libsodium-wrappers-sumo": "^0.7.9",
+    "prettier": "^2.3.2",
+    "recoil": "^0.3.1",
+    "socket.io-client": "^4.1.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/icons": "^1.0.5",
+    "@chakra-ui/react": "^1.4.2",
+    "@chakra-ui/theme-tools": "1.1.2",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "11.1.5",
+    "@types/node": "^14.6.4",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5",
+    "framer-motion": "^4.0.3",
+    "next": "^10.1.3",
+    "nextron": "^6.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.2.3"
+  }
+}
